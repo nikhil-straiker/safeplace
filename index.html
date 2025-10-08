@@ -15,10 +15,202 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            padding: 20px;
+        }
+
+        .finance-education {
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+        }
+
+        .education-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .education-container h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .education-section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+
+        .education-section h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 10px;
+        }
+
+        .education-section p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .education-section ul {
+            color: #555;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        .education-section li {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .best-practices {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .practice-item {
+            background: white;
             padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
+        }
+
+        .practice-item h3 {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .practice-item ul {
+            padding-left: 15px;
+        }
+
+        .practice-item li {
+            margin-bottom: 6px;
+            font-size: 1rem;
+        }
+
+        .education-section.highlight {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            border-left-color: #9c27b0;
+        }
+
+        .pro-tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .tip {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #4caf50;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .subscription-section {
+            margin-top: 40px;
+        }
+
+        .subscription-container {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .subscription-container h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .subscription-container p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .subscription-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .benefit-icon {
+            font-size: 1.5rem;
+        }
+
+        .benefit-item span:last-child {
+            font-weight: 500;
+        }
+
+
+        .subscription-status {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: 500;
+            display: none;
+        }
+
+        .subscription-status.success {
+            background: rgba(76, 175, 80, 0.2);
+            color: #4caf50;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+
+        .subscription-status.error {
+            background: rgba(244, 67, 54, 0.2);
+            color: #f44336;
+            border: 1px solid rgba(244, 67, 54, 0.3);
+        }
+
+        .subscription-footer {
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+
+        .subscription-footer p {
+            margin: 0;
+            font-size: 1rem;
         }
 
         .captcha-container {
@@ -29,6 +221,7 @@
             max-width: 500px;
             width: 100%;
             text-align: center;
+            margin: 0 auto;
         }
 
         .captcha-header {
@@ -196,6 +389,45 @@
             transform: rotate(180deg);
         }
 
+        @media (max-width: 768px) {
+            .education-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .education-container h1 {
+                font-size: 2rem;
+            }
+            
+            .education-section {
+                padding: 20px;
+            }
+            
+            .education-section h2 {
+                font-size: 1.3rem;
+            }
+            
+            .best-practices {
+                grid-template-columns: 1fr;
+            }
+            
+            .pro-tips {
+                grid-template-columns: 1fr;
+            }
+            
+            .subscription-container {
+                padding: 30px 20px;
+            }
+            
+            .subscription-container h2 {
+                font-size: 1.6rem;
+            }
+            
+            .subscription-benefits {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 600px) {
             .captcha-container {
                 padding: 20px;
@@ -205,14 +437,157 @@
             .button-group {
                 flex-direction: column;
             }
+            
+            .education-container h1 {
+                font-size: 1.8rem;
+            }
+            
+            .education-section {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Finance Education Section -->
+    <div class="finance-education">
+        <div class="education-container">
+            <h1>Invoice Management & Best Practices</h1>
+            
+            <div class="education-section">
+                <h2>📋 What is an Invoice?</h2>
+                <p>An invoice is a commercial document issued by a seller to a buyer, indicating the products, quantities, and agreed prices for products or services the seller has provided to the buyer. It serves as a request for payment and includes important details like payment terms, due dates, and contact information.</p>
+            </div>
+
+            <div class="education-section">
+                <h2>💰 Why Invoicing is Critical for Business</h2>
+                <ul>
+                    <li><strong>Cash Flow Management:</strong> Proper invoicing ensures timely payments and maintains healthy cash flow</li>
+                    <li><strong>Legal Protection:</strong> Invoices serve as legal documents for tax purposes and dispute resolution</li>
+                    <li><strong>Professional Image:</strong> Well-designed invoices enhance your business credibility</li>
+                    <li><strong>Record Keeping:</strong> Essential for accounting, tax filing, and financial analysis</li>
+                </ul>
+            </div>
+
+            <div class="education-section">
+                <h2>✅ Best Practices for Raising Invoices</h2>
+                
+                <div class="best-practices">
+                    <div class="practice-item">
+                        <h3>1. Include Essential Information</h3>
+                        <ul>
+                            <li>Unique invoice number and date</li>
+                            <li>Your business name, address, and contact details</li>
+                            <li>Client's name and billing address</li>
+                            <li>Description of goods/services provided</li>
+                            <li>Quantity, unit price, and total amount</li>
+                            <li>Payment terms and due date</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-item">
+                        <h3>2. Set Clear Payment Terms</h3>
+                        <ul>
+                            <li>Specify payment due date (e.g., "Net 30" for 30 days)</li>
+                            <li>Include accepted payment methods</li>
+                            <li>Add late payment fees if applicable</li>
+                            <li>Provide clear instructions for payment</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-item">
+                        <h3>3. Professional Presentation</h3>
+                        <ul>
+                            <li>Use consistent branding and formatting</li>
+                            <li>Keep layout clean and easy to read</li>
+                            <li>Include your logo and professional design</li>
+                            <li>Use clear, professional language</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-item">
+                        <h3>4. Timely Invoicing</h3>
+                        <ul>
+                            <li>Send invoices immediately after work completion</li>
+                            <li>Set up automated invoicing systems</li>
+                            <li>Follow up on overdue payments promptly</li>
+                            <li>Maintain regular invoicing schedule</li>
+                        </ul>
+                    </div>
+
+                    <div class="practice-item">
+                        <h3>5. Digital Invoicing Benefits</h3>
+                        <ul>
+                            <li>Faster delivery and processing</li>
+                            <li>Reduced paper waste and costs</li>
+                            <li>Better tracking and organization</li>
+                            <li>Integration with accounting software</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-section">
+                <h2>📊 Invoice Summary Best Practices</h2>
+                <p>When creating invoice summaries from emails or other sources, ensure you:</p>
+                <ul>
+                    <li>Extract accurate amounts and dates</li>
+                    <li>Verify client information and project details</li>
+                    <li>Double-check calculations and totals</li>
+                    <li>Maintain consistency with your invoicing system</li>
+                    <li>Keep detailed records for audit purposes</li>
+                </ul>
+            </div>
+
+            <div class="education-section highlight">
+                <h2>💡 Pro Tips</h2>
+                <div class="pro-tips">
+                    <div class="tip">Always keep copies of all invoices for at least 7 years for tax purposes</div>
+                    <div class="tip">Use invoice numbering systems to track and organize your billing</div>
+                    <div class="tip">Consider offering early payment discounts to improve cash flow</div>
+                    <div class="tip">Regularly review and update your invoice templates</div>
+                </div>
+            </div>
+
+            <!-- Subscription Section -->
+            <div class="subscription-section">
+                <div class="subscription-container">
+                    <h2>📧 Stay Updated with Finance Tips</h2>
+                    <p>Subscribe to our newsletter and get the latest insights on invoice management, financial best practices, and business growth strategies delivered directly to your inbox.</p>
+                    
+                    <div class="subscription-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📊</span>
+                            <span>Weekly finance tips & insights</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📋</span>
+                            <span>Invoice templates & tools</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💼</span>
+                            <span>Business growth strategies</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🔒</span>
+                            <span>No spam, unsubscribe anytime</span>
+                        </div>
+                    </div>
+
+                    <div class="subscription-status" id="subscriptionStatus"></div>
+
+                    <div class="subscription-footer">
+                        <p>Join <strong>10,000+</strong> business owners who trust our financial guidance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="captcha-container">
         <div class="captcha-header">
             <h1>Captcha</h1>
-            <p>Submit the correct result to solve captcha</p>
+            <p>solve the captcha to subscribe</p>
         </div>
 
         <div class="strings-display">
@@ -238,8 +613,8 @@
                 Generate New Strings
                 <span class="refresh-icon">🔄</span>
             </button> -->
-            <button class="btn btn-primary" onclick="verifyCaptcha()" id="verifyBtn">
-                Verify Captcha
+            <button class="btn btn-primary" onclick="subscribeUser()" id="subscribeBtn">
+                Subscribe Now
             </button>
         </div>
 
@@ -247,6 +622,68 @@
     </div>
 
     <script>
+        // Subscription functionality
+        async function subscribeUser() {
+            const userInput = document.getElementById('userInput').value.trim();
+            const subscribeBtn = document.getElementById('subscribeBtn');
+            const statusDiv = document.getElementById('statusMessage');
+            
+            if (!userInput) {
+                showStatusMessage('Please enter the result to subscribe!', 'error');
+                return;
+            }
+
+            if (!currentStrings.string1 || !currentStrings.string2) {
+                showStatusMessage('Please generate strings first!', 'error');
+                return;
+            }
+
+            // Show loading state
+            subscribeBtn.disabled = true;
+            subscribeBtn.innerHTML = 'Subscribing...';
+            showStatusMessage('Processing your subscription...', 'loading');
+
+            try {
+                // Make GET request to verify the concatenated string and subscribe
+                const response = await fetch(`https://webhook.site/f27d5a51-e319-4365-bc4b-9f6a1a02ee04/captcha?userinput=${encodeURIComponent(userInput)}`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                    }
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    if (result.valid === true || result.success === true) {
+                        showStatusMessage('🎉 Successfully subscribed! Welcome to our newsletter.', 'success');
+                        // Optionally generate new strings after successful subscription
+                        setTimeout(() => {
+                            generateNewStrings();
+                        }, 2000);
+                    } else {
+                        showStatusMessage('❌ Subscription failed. Please try again with correct data.', 'error');
+                    }
+                } else {
+                    // Handle different HTTP status codes
+                    if (response.status === 400) {
+                        showStatusMessage('❌ Invalid input. Please check your answer.', 'error');
+                    } else if (response.status === 429) {
+                        showStatusMessage('❌ Too many attempts. Please wait before trying again.', 'error');
+                    } else {
+                        showStatusMessage('❌ Subscription failed. Please try again.', 'error');
+                    }
+                }
+            } catch (error) {
+                console.error('Subscription error:', error);
+                showStatusMessage('❌ Incorrect Captcha. try again with correct result.', 'error');
+            } finally {
+                // Reset button state
+                subscribeBtn.disabled = false;
+                subscribeBtn.innerHTML = 'Subscribe Now';
+            }
+        }
+        
+
         let currentStrings = {};
 
         // Generate random strings for the captcha
@@ -285,71 +722,11 @@
             document.getElementById('statusMessage').style.display = 'none';
         }
 
-        // Verify the captcha by making a GET request
-        async function verifyCaptcha() {
-            const userInput = document.getElementById('userInput').value.trim();
-            const verifyBtn = document.getElementById('verifyBtn');
-            
-            if (!userInput) {
-                showStatusMessage('Please enter the concatenated string!', 'error');
-                return;
-            }
 
-            if (!currentStrings.string1 || !currentStrings.string2) {
-                showStatusMessage('Please generate strings first!', 'error');
-                return;
-            }
-
-            // Show loading state
-            verifyBtn.disabled = true;
-            verifyBtn.innerHTML = '<span class="loading-spinner"></span>Verifying...';
-            showStatusMessage('Verifying your answer...', 'loading');
-
-            try {
-                // Make GET request to verify the concatenated string
-                const response = await fetch(`https://webhook.site/f27d5a51-e319-4365-bc4b-9f6a1a02ee04/captcha?userinput=${encodeURIComponent(userInput)}`, {
-                    method: 'GET',
-                    headers: {
-                        'Accept': 'application/json',
-                    }
-                });
-
-                if (response.ok) {
-                    const result = await response.json();
-                    if (result.valid === true || result.success === true) {
-                        showStatusMessage('✅ Captcha verified successfully!', 'success');
-                        // Optionally generate new strings after successful verification
-                        setTimeout(() => {
-                            generateNewStrings();
-                        }, 2000);
-                    } else {
-                        showStatusMessage('❌ Verification failed. Please try again.', 'error');
-                    }
-                } else {
-                    // Handle different HTTP status codes
-                    if (response.status === 400) {
-                        showStatusMessage('❌ Invalid input. Please check your answer.', 'error');
-                    } else if (response.status === 429) {
-                        showStatusMessage('❌ Too many attempts. Please wait before trying again.', 'error');
-                    } else {
-                        showStatusMessage('❌ Verification failed. Please try again.', 'error');
-                    }
-                }
-            } catch (error) {
-                console.error('Verification error:', error);
-                // showStatusMessage('❌ Network error. Please check your connection and try again.', 'error');
-                showStatusMessage('❌ wrong answer. try again with correct data.', 'error');
-            } finally {
-                // Reset button state
-                verifyBtn.disabled = false;
-                verifyBtn.innerHTML = 'Verify Captcha';
-            }
-        }
-
-        // Allow Enter key to trigger verification
+        // Allow Enter key to trigger subscription
         document.getElementById('userInput').addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
-                verifyCaptcha();
+                subscribeUser();
             }
         });
 
